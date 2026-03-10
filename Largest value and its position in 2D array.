@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int b,c ;
+    printf("Enter the number of row:");
+    scanf("%d",&b);
+    printf("Enter the number of column:");
+    scanf("%d",&c);
+    int a[b][c];
+    int i,j;
+     for(i=0;i<b;i++){
+        for(j=0;j<c;j++){
+                printf("Enter the values of 2D array %dx%d:",i+1,j+1);
+        scanf("%d",&a[i][j]);
+        }
+     }
+     int large=a[0][0],column=0,row=0;
+
+
+    for(i=0;i<b;i++){
+        for(j=0;j<c;j++){
+        if(large<a[i][j]){
+            large=a[i][j];
+            row=i;
+            column=j;
+
+        }
+    }
+    }
+      printf("The large value is %d  in row number:%d and column number:%d",large,row+1,column+1);
+
+
+
+    return 0;
+}
