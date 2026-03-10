@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+    int a[6]={2,5,1,8,9,11};
+    int i,key,position=0;
+
+
+
+    printf("Enter the key :");
+    scanf("%d",&key);
+
+    for(i=0 ;i<6 ;i++){
+        if(a[i]==key){
+            position=i;
+        }
+    }
+    printf("The position of the key is:%d",position);
+
+    return 0;
+}
